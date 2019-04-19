@@ -3,14 +3,21 @@ author: {
 	test: 1,
 	test2: "hello world"
 }
+pageType: home
+variableName: []
+meta: {
+	
+}
 ---
 
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
-{{> header }}
+{{> header page }}
 
 {{ frontMatter.author.test }}
 {{ frontMatter.author.test2 }} 
+{{ frontMatter.pageType}} 
+
 
 <div class='test'>
 	<h2>Hello twirls World</h2>
